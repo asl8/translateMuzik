@@ -7,10 +7,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.projectoxford.cordova.speechrecognition": {
+    "cordova-plugin-muzik": {
         "source": {
             "type": "git",
-            "url": "https://github.com/faceach/com.projectoxford.cordova.speechrecognition.git",
+            "url": "https://github.com/MuzikLLC/cordova-plugin-muzik.git",
             "subdir": "."
         },
         "is_top_level": true,

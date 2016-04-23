@@ -5,15 +5,28 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		10F51A4B6FDC40C9940AC951 /* SerialNumberBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2796A6FE80684A1DB7C91963 /* SerialNumberBridge.m */; };
+		1508546D24034BBCA7519726 /* libMZAccessory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D5ACE1C0434078AFB3F294 /* libMZAccessory.a */; };
+		1A23229BF1624BAEBC5D6311 /* MotionBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DD097D87C86B49F08D221C96 /* MotionBridge.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		4817D1D28DCC4B4681D03CFF /* OxfordSpeechRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B68D8011D30424690C2AD9C /* OxfordSpeechRecognition.m */; };
-		2B4426865D6B47928D9658E8 /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558BA5211F2544FE880E1126 /* SpeechSDK.framework */; };
+		32ABC4E33D094EA3B5CE6A28 /* MspVersionBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 484DF1EF649D4D3BB6CFF8FE /* MspVersionBridge.m */; };
+		45CA693CD35346C7B803E14C /* BatteryLevelBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 86212D66B46D4DD29DCFE4CE /* BatteryLevelBridge.m */; };
+		5691EF1BD9BB43E39A99CB99 /* ChargeStatusBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 573886BC83DA42A49F4CB872 /* ChargeStatusBridge.m */; };
+		60B1514B9CCC458E81D39118 /* AutoPlayBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A1D5BB325A4615A2C166C6 /* AutoPlayBridge.m */; };
+		6CB680592B8C433F843296E1 /* MuzikPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 607852A706F640398303D96A /* MuzikPlugin.m */; };
+		8990308ADF234D69B8C8D5AA /* ConnectionStateBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA1576B921A4B4080C8999A /* ConnectionStateBridge.m */; };
+		95E2F8E6BF2C4C9FB4A9EC3E /* BluetoothLocalNameBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EC49C7FC9742C498211CB8 /* BluetoothLocalNameBridge.m */; };
+		AAEDF3060F8B4A59AE93C3DE /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE894322D82E40F1800CEF80 /* ExternalAccessory.framework */; };
+		ACCBAD1424D44A0FA16A8DAE /* AccelerometerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = C4778D01A3914324B817062E /* AccelerometerBridge.m */; };
+		D7F82F54A7FA43069C846B6C /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DDF5B12E4846BEAE525A4D /* Queue.m */; };
+		EC6E2465C8E9407FAF1E0C41 /* GestureBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 155809F214694F3299F45E56 /* GestureBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +48,21 @@
 
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MuzikTransl/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		04E3C039D643455C9E8640B6 /* BatteryLevelBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BatteryLevelBridge.h; path = "cordova-plugin-muzik/src/BatteryLevelBridge.h"; sourceTree = "<group>"; };
+		071E06585E054C1F9B53A60D /* ChargeStatusBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ChargeStatusBridge.h; path = "cordova-plugin-muzik/src/ChargeStatusBridge.h"; sourceTree = "<group>"; };
+		128DEAE6033747F19C9F116C /* MZGesture.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZGesture.h; path = "cordova-plugin-muzik/include/MZGesture.h"; sourceTree = "<group>"; };
+		155809F214694F3299F45E56 /* GestureBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = GestureBridge.m; path = "cordova-plugin-muzik/src/GestureBridge.m"; sourceTree = "<group>"; };
+		166B76BF6B2F4B0E94963FD8 /* MZMotion.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZMotion.h; path = "cordova-plugin-muzik/include/MZMotion.h"; sourceTree = "<group>"; };
+		17DDF5B12E4846BEAE525A4D /* Queue.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = Queue.m; path = "cordova-plugin-muzik/src/Queue.m"; sourceTree = "<group>"; };
+		19A6EE84BE9E46889CB83873 /* MZAccelerometerProcessor.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZAccelerometerProcessor.h; path = "cordova-plugin-muzik/include/MZAccelerometerProcessor.h"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* MuzikTransl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuzikTransl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEB434B35C1467CB0371392 /* MuzikPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MuzikPlugin.h; path = "cordova-plugin-muzik/src/MuzikPlugin.h"; sourceTree = "<group>"; };
+		2796A6FE80684A1DB7C91963 /* SerialNumberBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SerialNumberBridge.m; path = "cordova-plugin-muzik/src/SerialNumberBridge.m"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D9D8E233F634F9F9E0DDE31 /* AutoPlayBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AutoPlayBridge.h; path = "cordova-plugin-muzik/src/AutoPlayBridge.h"; sourceTree = "<group>"; };
+		2F9760A862DC47DE92AB75FC /* MZAccessory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZAccessory.h; path = "cordova-plugin-muzik/include/MZAccessory.h"; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -48,14 +72,58 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* MuzikTransl-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MuzikTransl-Prefix.pch"; sourceTree = "<group>"; };
+		39C38E2950124CCBB42E4218 /* SerialNumberBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SerialNumberBridge.h; path = "cordova-plugin-muzik/src/SerialNumberBridge.h"; sourceTree = "<group>"; };
+		3DDC1D7D964A46ECB10E04B3 /* MotionBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MotionBridge.h; path = "cordova-plugin-muzik/src/MotionBridge.h"; sourceTree = "<group>"; };
+		3FF60681881E412D81DAE087 /* MZAccessory-Prefix.pch */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "MZAccessory-Prefix.pch"; path = "cordova-plugin-muzik/include/MZAccessory-Prefix.pch"; sourceTree = "<group>"; };
+		484DF1EF649D4D3BB6CFF8FE /* MspVersionBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MspVersionBridge.m; path = "cordova-plugin-muzik/src/MspVersionBridge.m"; sourceTree = "<group>"; };
+		4CB7FCDD54EC4071A868A8F8 /* MZConnectionStateManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZConnectionStateManager.h; path = "cordova-plugin-muzik/include/MZConnectionStateManager.h"; sourceTree = "<group>"; };
+		573886BC83DA42A49F4CB872 /* ChargeStatusBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ChargeStatusBridge.m; path = "cordova-plugin-muzik/src/ChargeStatusBridge.m"; sourceTree = "<group>"; };
+		58527EE7A84D4138BA6C8B07 /* MZAutoPlayRequestManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZAutoPlayRequestManager.h; path = "cordova-plugin-muzik/include/MZAutoPlayRequestManager.h"; sourceTree = "<group>"; };
+		607852A706F640398303D96A /* MuzikPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MuzikPlugin.m; path = "cordova-plugin-muzik/src/MuzikPlugin.m"; sourceTree = "<group>"; };
+		61220F50999D413984190352 /* ConnectionStateBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ConnectionStateBridge.h; path = "cordova-plugin-muzik/src/ConnectionStateBridge.h"; sourceTree = "<group>"; };
+		6474B31FCB92494796BB79B0 /* MZMotionAnalyzer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZMotionAnalyzer.h; path = "cordova-plugin-muzik/include/MZMotionAnalyzer.h"; sourceTree = "<group>"; };
+		6B401AF4E499443DBF87EA3D /* MZPacketDefines.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZPacketDefines.h; path = "cordova-plugin-muzik/include/MZPacketDefines.h"; sourceTree = "<group>"; };
+		6BF92405FC514ACB93B83B02 /* MZBatteryLevelRequestManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZBatteryLevelRequestManager.h; path = "cordova-plugin-muzik/include/MZBatteryLevelRequestManager.h"; sourceTree = "<group>"; };
+		715D3FE19EAB4A33B474B5C8 /* MZGestureProcessor.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZGestureProcessor.h; path = "cordova-plugin-muzik/include/MZGestureProcessor.h"; sourceTree = "<group>"; };
+		76E490C2E6604ED69ABB3DBA /* MZAutoPlayProcessor.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZAutoPlayProcessor.h; path = "cordova-plugin-muzik/include/MZAutoPlayProcessor.h"; sourceTree = "<group>"; };
+		78D85D238390449CA5A7DCCD /* MZBluetoothLocalNameProcessor.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZBluetoothLocalNameProcessor.h; path = "cordova-plugin-muzik/include/MZBluetoothLocalNameProcessor.h"; sourceTree = "<group>"; };
+		7E0E1B139CB244EB89E0755E /* MZSerialNumberProcessor.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZSerialNumberProcessor.h; path = "cordova-plugin-muzik/include/MZSerialNumberProcessor.h"; sourceTree = "<group>"; };
+		86212D66B46D4DD29DCFE4CE /* BatteryLevelBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = BatteryLevelBridge.m; path = "cordova-plugin-muzik/src/BatteryLevelBridge.m"; sourceTree = "<group>"; };
+		86EC49C7FC9742C498211CB8 /* BluetoothLocalNameBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = BluetoothLocalNameBridge.m; path = "cordova-plugin-muzik/src/BluetoothLocalNameBridge.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MuzikTransl-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MuzikTransl-Info.plist"; path = "MuzikTransl/MuzikTransl-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		8E5F005B074A4360B8F9A6E0 /* MZAccelerometerRequestManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZAccelerometerRequestManager.h; path = "cordova-plugin-muzik/include/MZAccelerometerRequestManager.h"; sourceTree = "<group>"; };
+		8EEBAE55668F430CB8DCEBC8 /* MZPacketFactory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZPacketFactory.h; path = "cordova-plugin-muzik/include/MZPacketFactory.h"; sourceTree = "<group>"; };
+		9142C674CEDE46688BC2F8EA /* MZPacket.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZPacket.h; path = "cordova-plugin-muzik/include/MZPacket.h"; sourceTree = "<group>"; };
+		9144076F930145CCB184761B /* MZChargeStatusRequestManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZChargeStatusRequestManager.h; path = "cordova-plugin-muzik/include/MZChargeStatusRequestManager.h"; sourceTree = "<group>"; };
+		95A4F8F1FE4947669FD21668 /* AccelerometerBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AccelerometerBridge.h; path = "cordova-plugin-muzik/src/AccelerometerBridge.h"; sourceTree = "<group>"; };
+		9FC3C5756A8046DD95B16699 /* Queue.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = "cordova-plugin-muzik/src/Queue.h"; sourceTree = "<group>"; };
+		A8EB28A7D60D45CA867FBE27 /* BluetoothLocalNameBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BluetoothLocalNameBridge.h; path = "cordova-plugin-muzik/src/BluetoothLocalNameBridge.h"; sourceTree = "<group>"; };
+		AAC414217610452F8D12357F /* GestureBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = GestureBridge.h; path = "cordova-plugin-muzik/src/GestureBridge.h"; sourceTree = "<group>"; };
+		ACF35493788D4E20B9A1CC5C /* MspVersionBridge.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MspVersionBridge.h; path = "cordova-plugin-muzik/src/MspVersionBridge.h"; sourceTree = "<group>"; };
+		AE210BCCCFC841B78A020B5B /* MZBluetoothLocalNameManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZBluetoothLocalNameManager.h; path = "cordova-plugin-muzik/include/MZBluetoothLocalNameManager.h"; sourceTree = "<group>"; };
+		B2B8848667874BC5ABF1532F /* MZProcessorDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZProcessorDelegate.h; path = "cordova-plugin-muzik/include/MZProcessorDelegate.h"; sourceTree = "<group>"; };
+		B4206B98E19D43768FC2BC2D /* MZBluetoothServer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZBluetoothServer.h; path = "cordova-plugin-muzik/include/MZBluetoothServer.h"; sourceTree = "<group>"; };
+		BD8DC63985DB41CC9339E9CC /* NptAccessory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NptAccessory.h; path = "cordova-plugin-muzik/include/NptAccessory.h"; sourceTree = "<group>"; };
+		BDD12987BD524BE298A8ADB6 /* MZSerialNumberRequestManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZSerialNumberRequestManager.h; path = "cordova-plugin-muzik/include/MZSerialNumberRequestManager.h"; sourceTree = "<group>"; };
+		BE5B5F6584CE4333BE6D2BA3 /* MZMspVersionRequestManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZMspVersionRequestManager.h; path = "cordova-plugin-muzik/include/MZMspVersionRequestManager.h"; sourceTree = "<group>"; };
+		C04DB9E1257044ED9897D800 /* MZConnectionState.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZConnectionState.h; path = "cordova-plugin-muzik/include/MZConnectionState.h"; sourceTree = "<group>"; };
+		C2920D7B65A042BF97D7CAAE /* MZBatteryLevelProcessor.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZBatteryLevelProcessor.h; path = "cordova-plugin-muzik/include/MZBatteryLevelProcessor.h"; sourceTree = "<group>"; };
+		C4778D01A3914324B817062E /* AccelerometerBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AccelerometerBridge.m; path = "cordova-plugin-muzik/src/AccelerometerBridge.m"; sourceTree = "<group>"; };
+		CD99E262B1134B1F8DF55672 /* MZAccelerometerBuffer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZAccelerometerBuffer.h; path = "cordova-plugin-muzik/include/MZAccelerometerBuffer.h"; sourceTree = "<group>"; };
+		CE894322D82E40F1800CEF80 /* ExternalAccessory.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		D8A1D5BB325A4615A2C166C6 /* AutoPlayBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AutoPlayBridge.m; path = "cordova-plugin-muzik/src/AutoPlayBridge.m"; sourceTree = "<group>"; };
+		D8BB99A0FC5D4AB791986880 /* MZChargeStatusProcessor.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZChargeStatusProcessor.h; path = "cordova-plugin-muzik/include/MZChargeStatusProcessor.h"; sourceTree = "<group>"; };
+		DD097D87C86B49F08D221C96 /* MotionBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MotionBridge.m; path = "cordova-plugin-muzik/src/MotionBridge.m"; sourceTree = "<group>"; };
+		E33EC8552CC94A4CA44C852A /* MZPacketBuilder.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZPacketBuilder.h; path = "cordova-plugin-muzik/include/MZPacketBuilder.h"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F52EA7C0DAA9453B81410621 /* MZGestureRequestManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZGestureRequestManager.h; path = "cordova-plugin-muzik/include/MZGestureRequestManager.h"; sourceTree = "<group>"; };
+		F589362935094562A4E71BEE /* MZDefaultMotion.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZDefaultMotion.h; path = "cordova-plugin-muzik/include/MZDefaultMotion.h"; sourceTree = "<group>"; };
+		F5A8376546BE4D818FB2D4B8 /* MZMspVersionProcessor.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MZMspVersionProcessor.h; path = "cordova-plugin-muzik/include/MZMspVersionProcessor.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = MuzikTransl/config.xml; sourceTree = "<group>"; };
-		2B68D8011D30424690C2AD9C /* OxfordSpeechRecognition.m */ = {isa = PBXFileReference; name = "OxfordSpeechRecognition.m"; path = "com.projectoxford.cordova.speechrecognition/OxfordSpeechRecognition.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		01A0A9FBC48244B18B681CFF /* OxfordSpeechRecognition.h */ = {isa = PBXFileReference; name = "OxfordSpeechRecognition.h"; path = "com.projectoxford.cordova.speechrecognition/OxfordSpeechRecognition.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		558BA5211F2544FE880E1126 /* SpeechSDK.framework */ = {isa = PBXFileReference; name = "SpeechSDK.framework"; path = "MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition/SpeechSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F9D5ACE1C0434078AFB3F294 /* libMZAccessory.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; name = libMZAccessory.a; path = "MuzikTransl/Plugins/cordova-plugin-muzik/libs/libMZAccessory.a"; sourceTree = "<group>"; };
+		FBA1576B921A4B4080C8999A /* ConnectionStateBridge.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ConnectionStateBridge.m; path = "cordova-plugin-muzik/src/ConnectionStateBridge.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				2B4426865D6B47928D9658E8 /* SpeechSDK.framework in Frameworks */,
+				1508546D24034BBCA7519726 /* libMZAccessory.a in Frameworks */,
+				AAEDF3060F8B4A59AE93C3DE /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +203,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				558BA5211F2544FE880E1126 /* SpeechSDK.framework */,
+				F9D5ACE1C0434078AFB3F294 /* libMZAccessory.a */,
+				CE894322D82E40F1800CEF80 /* ExternalAccessory.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,8 +230,62 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				2B68D8011D30424690C2AD9C /* OxfordSpeechRecognition.m */,
-				01A0A9FBC48244B18B681CFF /* OxfordSpeechRecognition.h */,
+				17DDF5B12E4846BEAE525A4D /* Queue.m */,
+				607852A706F640398303D96A /* MuzikPlugin.m */,
+				FBA1576B921A4B4080C8999A /* ConnectionStateBridge.m */,
+				86EC49C7FC9742C498211CB8 /* BluetoothLocalNameBridge.m */,
+				155809F214694F3299F45E56 /* GestureBridge.m */,
+				C4778D01A3914324B817062E /* AccelerometerBridge.m */,
+				86212D66B46D4DD29DCFE4CE /* BatteryLevelBridge.m */,
+				D8A1D5BB325A4615A2C166C6 /* AutoPlayBridge.m */,
+				573886BC83DA42A49F4CB872 /* ChargeStatusBridge.m */,
+				2796A6FE80684A1DB7C91963 /* SerialNumberBridge.m */,
+				484DF1EF649D4D3BB6CFF8FE /* MspVersionBridge.m */,
+				DD097D87C86B49F08D221C96 /* MotionBridge.m */,
+				BD8DC63985DB41CC9339E9CC /* NptAccessory.h */,
+				3FF60681881E412D81DAE087 /* MZAccessory-Prefix.pch */,
+				2F9760A862DC47DE92AB75FC /* MZAccessory.h */,
+				19A6EE84BE9E46889CB83873 /* MZAccelerometerProcessor.h */,
+				8E5F005B074A4360B8F9A6E0 /* MZAccelerometerRequestManager.h */,
+				76E490C2E6604ED69ABB3DBA /* MZAutoPlayProcessor.h */,
+				58527EE7A84D4138BA6C8B07 /* MZAutoPlayRequestManager.h */,
+				C2920D7B65A042BF97D7CAAE /* MZBatteryLevelProcessor.h */,
+				6BF92405FC514ACB93B83B02 /* MZBatteryLevelRequestManager.h */,
+				B4206B98E19D43768FC2BC2D /* MZBluetoothServer.h */,
+				D8BB99A0FC5D4AB791986880 /* MZChargeStatusProcessor.h */,
+				9144076F930145CCB184761B /* MZChargeStatusRequestManager.h */,
+				4CB7FCDD54EC4071A868A8F8 /* MZConnectionStateManager.h */,
+				78D85D238390449CA5A7DCCD /* MZBluetoothLocalNameProcessor.h */,
+				AE210BCCCFC841B78A020B5B /* MZBluetoothLocalNameManager.h */,
+				7E0E1B139CB244EB89E0755E /* MZSerialNumberProcessor.h */,
+				BDD12987BD524BE298A8ADB6 /* MZSerialNumberRequestManager.h */,
+				128DEAE6033747F19C9F116C /* MZGesture.h */,
+				715D3FE19EAB4A33B474B5C8 /* MZGestureProcessor.h */,
+				F52EA7C0DAA9453B81410621 /* MZGestureRequestManager.h */,
+				F5A8376546BE4D818FB2D4B8 /* MZMspVersionProcessor.h */,
+				BE5B5F6584CE4333BE6D2BA3 /* MZMspVersionRequestManager.h */,
+				9142C674CEDE46688BC2F8EA /* MZPacket.h */,
+				E33EC8552CC94A4CA44C852A /* MZPacketBuilder.h */,
+				6B401AF4E499443DBF87EA3D /* MZPacketDefines.h */,
+				8EEBAE55668F430CB8DCEBC8 /* MZPacketFactory.h */,
+				B2B8848667874BC5ABF1532F /* MZProcessorDelegate.h */,
+				C04DB9E1257044ED9897D800 /* MZConnectionState.h */,
+				CD99E262B1134B1F8DF55672 /* MZAccelerometerBuffer.h */,
+				F589362935094562A4E71BEE /* MZDefaultMotion.h */,
+				6474B31FCB92494796BB79B0 /* MZMotionAnalyzer.h */,
+				166B76BF6B2F4B0E94963FD8 /* MZMotion.h */,
+				1FEB434B35C1467CB0371392 /* MuzikPlugin.h */,
+				9FC3C5756A8046DD95B16699 /* Queue.h */,
+				61220F50999D413984190352 /* ConnectionStateBridge.h */,
+				A8EB28A7D60D45CA867FBE27 /* BluetoothLocalNameBridge.h */,
+				AAC414217610452F8D12357F /* GestureBridge.h */,
+				95A4F8F1FE4947669FD21668 /* AccelerometerBridge.h */,
+				04E3C039D643455C9E8640B6 /* BatteryLevelBridge.h */,
+				2D9D8E233F634F9F9E0DDE31 /* AutoPlayBridge.h */,
+				071E06585E054C1F9B53A60D /* ChargeStatusBridge.h */,
+				39C38E2950124CCBB42E4218 /* SerialNumberBridge.h */,
+				ACF35493788D4E20B9A1CC5C /* MspVersionBridge.h */,
+				3DDC1D7D964A46ECB10E04B3 /* MotionBridge.h */,
 			);
 			name = Plugins;
 			path = MuzikTransl/Plugins;
@@ -281,7 +405,18 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				4817D1D28DCC4B4681D03CFF /* OxfordSpeechRecognition.m in Sources */,
+				D7F82F54A7FA43069C846B6C /* Queue.m in Sources */,
+				6CB680592B8C433F843296E1 /* MuzikPlugin.m in Sources */,
+				8990308ADF234D69B8C8D5AA /* ConnectionStateBridge.m in Sources */,
+				95E2F8E6BF2C4C9FB4A9EC3E /* BluetoothLocalNameBridge.m in Sources */,
+				EC6E2465C8E9407FAF1E0C41 /* GestureBridge.m in Sources */,
+				ACCBAD1424D44A0FA16A8DAE /* AccelerometerBridge.m in Sources */,
+				45CA693CD35346C7B803E14C /* BatteryLevelBridge.m in Sources */,
+				60B1514B9CCC458E81D39118 /* AutoPlayBridge.m in Sources */,
+				5691EF1BD9BB43E39A99CB99 /* ChargeStatusBridge.m in Sources */,
+				10F51A4B6FDC40C9940AC951 /* SerialNumberBridge.m in Sources */,
+				32ABC4E33D094EA3B5CE6A28 /* MspVersionBridge.m in Sources */,
+				1A23229BF1624BAEBC5D6311 /* MotionBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +443,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition\"",
+					"\"MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -316,13 +456,13 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MuzikTransl/MuzikTransl-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MuzikTransl/Plugins/cordova-plugin-muzik/libs\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = a.b.cd;
 				PRODUCT_NAME = MuzikTransl;
 				PROVISIONING_PROFILE = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition\"",
-				);
 			};
 			name = Debug;
 		};
@@ -338,18 +478,23 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition\"",
+					"\"MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MuzikTransl/MuzikTransl-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MuzikTransl/MuzikTransl-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MuzikTransl/Plugins/cordova-plugin-muzik/libs\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = a.b.cd;
 				PRODUCT_NAME = MuzikTransl;
 				PROVISIONING_PROFILE = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition\"",
-				);
 			};
 			name = Release;
 		};

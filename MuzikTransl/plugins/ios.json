@@ -10,8 +10,8 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "a.b.c"
         },
-        "com.projectoxford.cordova.speechrecognition": {
-            "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+        "cordova-plugin-muzik": {
+            "PACKAGE_NAME": "a.b.c"
         }
     },
     "dependent_plugins": {}

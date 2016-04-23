@@ -9,7 +9,17 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"OxfordSpeechRecognition\"><param name=\"ios-package\" value=\"OxfordSpeechRecognition\" /></feature>",
+                            "xml": "<feature name=\"MuzikPlugin\"><param name=\"ios-package\" value=\"MuzikPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UISupportedExternalAccessoryProtocols": [
+                        {
+                            "xml": "<array><string>com.newpotato.muzik</string></array>",
                             "count": 1
                         }
                     ]
@@ -21,23 +31,23 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "a.b.c"
         },
-        "com.projectoxford.cordova.speechrecognition": {
-            "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+        "cordova-plugin-muzik": {
+            "PACKAGE_NAME": "a.b.c"
         }
     },
     "dependent_plugins": {},
     "modules": [
         {
-            "file": "plugins/com.projectoxford.cordova.speechrecognition/www/oxfordspeechrecognition.js",
-            "id": "com.projectoxford.cordova.speechrecognition.OxfordSpeechRecognition",
-            "pluginId": "com.projectoxford.cordova.speechrecognition",
+            "file": "plugins/cordova-plugin-muzik/www/muzik.js",
+            "id": "cordova-plugin-muzik.Muzik",
+            "pluginId": "cordova-plugin-muzik",
             "clobbers": [
-                "window.OxfordSpeechRecognition"
+                "muzik"
             ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.2",
-        "com.projectoxford.cordova.speechrecognition": "0.0.1"
+        "cordova-plugin-muzik": "0.0.3"
     }
 }

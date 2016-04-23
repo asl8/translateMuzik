@@ -1,11 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.projectoxford.cordova.speechrecognition/www/oxfordspeechrecognition.js",
-        "id": "com.projectoxford.cordova.speechrecognition.OxfordSpeechRecognition",
-        "pluginId": "com.projectoxford.cordova.speechrecognition",
+        "file": "plugins/cordova-plugin-muzik/www/muzik.js",
+        "id": "cordova-plugin-muzik.Muzik",
+        "pluginId": "cordova-plugin-muzik",
         "clobbers": [
-            "window.OxfordSpeechRecognition"
+            "muzik"
         ]
     }
 ];
@@ -13,7 +13,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.2.2",
-    "com.projectoxford.cordova.speechrecognition": "0.0.1"
+    "cordova-plugin-muzik": "0.0.3"
 }
 // BOTTOM OF METADATA
 });
