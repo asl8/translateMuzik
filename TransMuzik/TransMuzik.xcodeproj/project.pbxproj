@@ -14,6 +14,8 @@
 		2D92D2681CCC2A5D00FCA5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D92D2661CCC2A5D00FCA5D4 /* LaunchScreen.storyboard */; };
 		2D92D2731CCC2A5D00FCA5D4 /* TransMuzikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D92D2721CCC2A5D00FCA5D4 /* TransMuzikTests.swift */; };
 		2D92D27E1CCC2A5D00FCA5D4 /* TransMuzikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D92D27D1CCC2A5D00FCA5D4 /* TransMuzikUITests.swift */; };
+		414554B61CCC2DD500AC1697 /* libMZAccessory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 414554B51CCC2DD500AC1697 /* libMZAccessory.a */; };
+		414554B81CCC2E1700AC1697 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414554B71CCC2E1700AC1697 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		2D92D2791CCC2A5D00FCA5D4 /* TransMuzikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransMuzikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D92D27D1CCC2A5D00FCA5D4 /* TransMuzikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransMuzikUITests.swift; sourceTree = "<group>"; };
 		2D92D27F1CCC2A5D00FCA5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414554B51CCC2DD500AC1697 /* libMZAccessory.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMZAccessory.a; sourceTree = "<group>"; };
+		414554B71CCC2E1700AC1697 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414554B81CCC2E1700AC1697 /* ExternalAccessory.framework in Frameworks */,
+				414554B61CCC2DD500AC1697 /* libMZAccessory.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,7 @@
 		2D92D2511CCC2A5D00FCA5D4 = {
 			isa = PBXGroup;
 			children = (
+				414554B71CCC2E1700AC1697 /* ExternalAccessory.framework */,
 				2D92D25C1CCC2A5D00FCA5D4 /* TransMuzik */,
 				2D92D2711CCC2A5D00FCA5D4 /* TransMuzikTests */,
 				2D92D27C1CCC2A5D00FCA5D4 /* TransMuzikUITests */,
@@ -103,6 +110,7 @@
 				2D92D2641CCC2A5D00FCA5D4 /* Assets.xcassets */,
 				2D92D2661CCC2A5D00FCA5D4 /* LaunchScreen.storyboard */,
 				2D92D2691CCC2A5D00FCA5D4 /* Info.plist */,
+				414554B41CCC2DC700AC1697 /* lib */,
 			);
 			path = TransMuzik;
 			sourceTree = "<group>";
@@ -123,6 +131,14 @@
 				2D92D27F1CCC2A5D00FCA5D4 /* Info.plist */,
 			);
 			path = TransMuzikUITests;
+			sourceTree = "<group>";
+		};
+		414554B41CCC2DC700AC1697 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				414554B51CCC2DD500AC1697 /* libMZAccessory.a */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +209,7 @@
 				TargetAttributes = {
 					2D92D2591CCC2A5D00FCA5D4 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = A9WKEEM7M3;
+						DevelopmentTeam = 7FTNN876X5;
 					};
 					2D92D26D1CCC2A5D00FCA5D4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -401,28 +417,42 @@
 		2D92D2831CCC2A5D00FCA5D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TransMuzik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TransMuzik.TransMuzik;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TransMuzik",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.TransMuzik.TransMuzik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TransMuzik/libMZAccessory.a\"/**";
 			};
 			name = Debug;
 		};
 		2D92D2841CCC2A5D00FCA5D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TransMuzik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TransMuzik.TransMuzik;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TransMuzik",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.TransMuzik.TransMuzik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TransMuzik/libMZAccessory.a\"/**";
 			};
 			name = Release;
 		};
@@ -491,6 +521,7 @@
 				2D92D2841CCC2A5D00FCA5D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D92D2851CCC2A5D00FCA5D4 /* Build configuration list for PBXNativeTarget "TransMuzikTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +530,7 @@
 				2D92D2871CCC2A5D00FCA5D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D92D2881CCC2A5D00FCA5D4 /* Build configuration list for PBXNativeTarget "TransMuzikUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +539,7 @@
 				2D92D28A1CCC2A5D00FCA5D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
