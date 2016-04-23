@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -13,6 +12,8 @@
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		4817D1D28DCC4B4681D03CFF /* OxfordSpeechRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B68D8011D30424690C2AD9C /* OxfordSpeechRecognition.m */; };
+		2B4426865D6B47928D9658E8 /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558BA5211F2544FE880E1126 /* SpeechSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = MuzikTransl/config.xml; sourceTree = "<group>"; };
+		2B68D8011D30424690C2AD9C /* OxfordSpeechRecognition.m */ = {isa = PBXFileReference; name = "OxfordSpeechRecognition.m"; path = "com.projectoxford.cordova.speechrecognition/OxfordSpeechRecognition.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		01A0A9FBC48244B18B681CFF /* OxfordSpeechRecognition.h */ = {isa = PBXFileReference; name = "OxfordSpeechRecognition.h"; path = "com.projectoxford.cordova.speechrecognition/OxfordSpeechRecognition.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		558BA5211F2544FE880E1126 /* SpeechSDK.framework */ = {isa = PBXFileReference; name = "SpeechSDK.framework"; path = "MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition/SpeechSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				2B4426865D6B47928D9658E8 /* SpeechSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +134,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				558BA5211F2544FE880E1126 /* SpeechSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +160,8 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				2B68D8011D30424690C2AD9C /* OxfordSpeechRecognition.m */,
+				01A0A9FBC48244B18B681CFF /* OxfordSpeechRecognition.h */,
 			);
 			name = Plugins;
 			path = MuzikTransl/Plugins;
@@ -196,7 +204,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 730;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = A9WKEEM7M3;
@@ -273,6 +281,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				4817D1D28DCC4B4681D03CFF /* OxfordSpeechRecognition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +319,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = a.b.cd;
 				PRODUCT_NAME = MuzikTransl;
 				PROVISIONING_PROFILE = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition\"",
+				);
 			};
 			name = Debug;
 		};
@@ -333,6 +346,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = a.b.cd;
 				PRODUCT_NAME = MuzikTransl;
 				PROVISIONING_PROFILE = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"MuzikTransl/Plugins/com.projectoxford.cordova.speechrecognition\"",
+				);
 			};
 			name = Release;
 		};

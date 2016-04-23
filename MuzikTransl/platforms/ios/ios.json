@@ -4,16 +4,40 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"OxfordSpeechRecognition\"><param name=\"ios-package\" value=\"OxfordSpeechRecognition\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "a.b.c"
+        },
+        "com.projectoxford.cordova.speechrecognition": {
+            "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
         }
     },
     "dependent_plugins": {},
-    "modules": [],
+    "modules": [
+        {
+            "file": "plugins/com.projectoxford.cordova.speechrecognition/www/oxfordspeechrecognition.js",
+            "id": "com.projectoxford.cordova.speechrecognition.OxfordSpeechRecognition",
+            "pluginId": "com.projectoxford.cordova.speechrecognition",
+            "clobbers": [
+                "window.OxfordSpeechRecognition"
+            ]
+        }
+    ],
     "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.2.2"
+        "cordova-plugin-whitelist": "1.2.2",
+        "com.projectoxford.cordova.speechrecognition": "0.0.1"
     }
 }
